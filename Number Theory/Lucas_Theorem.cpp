@@ -34,7 +34,6 @@ ll nCr(int n, int r, int mod) {
     return numerator * modInverse(denominator, mod) % mod;
 }
 
-
 ll lucas(int n, int r, int p) {
 	if (r == 0) {
 		return 1;
@@ -43,8 +42,11 @@ ll lucas(int n, int r, int p) {
 }
 
 void solve() {
-    int n, r, p; cin >> n >> r >> p; // p is a prime;
-    ll res = lucas(n, r, p);
+    // int n, r, p; cin >> n >> r >> p; // p is a prime;
+    // ll res = lucas(n, r, p);
+
+    int n, p; cin >> n >> p;
+    ll res = modInverse(n, p);
 
     cout << res << "\n";
 }

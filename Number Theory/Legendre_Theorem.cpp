@@ -17,8 +17,7 @@ void solve() {
 
     int result = legendreExponent(n, p);
     cout << result << "\n";
-}
-
+œ
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
